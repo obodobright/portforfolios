@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:768px) {
+    .nav-nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+        display: flex;
+    }
+    .nav-item {
+        padding: 1.3em 2.5em;
+        display: block;
+        cursor: pointer;
+    }
+    .nav-link:hover {
+        color: black;
+        background: goldenrod;
+    }
+    .nav-list {
+        background: purple;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: none;
+    }
+    .nav-link {
+        color: goldenrod;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .nav-brand-container {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin: 1em;
+        margin-bottom: 2em;
+        padding: 1em
+    }
+    .nav-brand {
+        text-decoration: none;
+        font-size: 35px;
+        color: goldenrod
+    }
+    code {
+        background: purple;
+        padding: 0.1em 0.5em;
+        font-style: oblique;
+        font-stretch: ultra-condensed;
+        border-radius: 0.1em;
+    }
+    .container {
+        margin-right: 2em;
+        margin-left: 2em
+    }
+    .section h1 {
+        color: brown;
+        text-align: center;
+        font-size: 40px;
+        font-family: cursive;
+        padding: 1em;
+        font-synthesis: style;
+    }
+    .section p {
+        font-size: 22px;
+        font-weight: 100;
+        color: rgb(170, 170, 151);
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;
+    }
+    img {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 700px;
+        border-bottom-right-radius: 800px;
+        box-shadow: 3px 3px 10px goldenrod;
+    }
+    .img-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 1em
+    }
+    .contact-container {
+        background: red;
+        width: fit-content;
+        padding: 1em;
+        display: block;
+        position: fixed;
+        margin-top: 4em;
+        top: 0;
+        left: 12
+    }
+    .contact-container a {
+        color: white
+    }
+}
