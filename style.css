@@ -26,7 +26,7 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        display: none;
+        display: block;
     }
     .nav-link {
         color: goldenrod;
@@ -58,12 +58,28 @@
         margin-left: 2em
     }
     .section h1 {
-        color: brown;
         text-align: center;
         font-size: 40px;
         font-family: cursive;
-        padding: 1em;
-        font-synthesis: style;
+        padding: 0.3em 0.3em;
+        margin-bottom: 1em;
+        font-weight: 200;
+    }
+    .section h2 {
+        font-size: 30px;
+        padding: 0.5em 0;
+        border-bottom: 2px;
+        position: relative;
+        font-weight: 600;
+    }
+    .section h2::after {
+        content: "";
+        position: absolute;
+        top: 1.5em;
+        width: 30%;
+        background: linear-gradient(to left, goldenrod, purple);
+        height: 0.18em;
+        left: 0
     }
     .section p {
         font-size: 22px;
@@ -88,16 +104,33 @@
         margin-top: 1em
     }
     .contact-container {
-        background: red;
-        width: fit-content;
-        padding: 1em;
-        display: block;
+        background: purple;
+        padding: 0.5em;
         position: fixed;
-        margin-top: 4em;
-        top: 0;
-        left: 12
+        top: 40%;
+        right: 0%;
+        border-radius: 0.2em;
+        /* padding: 1em 1em */
     }
     .contact-container a {
-        color: white
+        color: goldenrod;
+        font-size: 27px;
+        margin-top: 2em;
     }
+    .contact-container a:hover {
+        color: rgb(170, 126, 15)
+    }
+    .fa-twitter,
+    .fa-envelope,
+    .fa-github {
+        margin-top: 0.5em
+    }
+    /* .circle {
+        height: 150px;
+        width: 200px;
+        background: green;
+        color: white;
+        position: absolute;
+        top: 30px
+    } */
 }
