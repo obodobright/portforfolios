@@ -61,6 +61,14 @@
     width: 550px;
     background-position: center;
     background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 350ms;
+    transform: scaleY(1);
+}
+
+.img-width:hover {
+    transform: scaleY(1.06);
 }
 
 .project-img {

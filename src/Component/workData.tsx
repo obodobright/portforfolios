@@ -25,7 +25,10 @@ type workType = {
   img: string;
   title: string;
   description: string;
-  stack: any[];
+  stack: {
+    icon: any;
+    tooltip: string;
+  }[];
   github: string;
   live: string;
 };
@@ -36,8 +39,30 @@ export const workData: workType[] = [
     title: "Lumen Luxury",
     description:
       "This is a mini e-commerce application that gives users the ability to buy both male and female clothes with a payment integration",
-    stack: [<FaReact />, <SiJavascript />, <SiStyledcomponents />, <IoLogoCss3 />, <AiFillApi />],
-    github: "",
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+
+      {
+        icon: <AiFillApi />,
+        tooltip: "API",
+      },
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <SiStyledcomponents />,
+        tooltip: "Styled-components",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
+    github: "https://github.com/obodobright/Mini-ecommerce-with-payment-stack",
     live: "https://lumenluxury.netlify.app/",
   },
   {
@@ -46,14 +71,33 @@ export const workData: workType[] = [
     description:
       "A tracking application for small and medium scale entrepreneur especially market women to track their debtors",
     stack: [
-      <FaReact />,
-      <SiJavascript />,
-      <SiStyledcomponents />,
-      <IoLogoCss3 />,
-      <SiFirebase />,
-      <RiSecurePaymentFill />,
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <SiStyledcomponents />,
+        tooltip: "Styled-components",
+      },
+      {
+        icon: <SiFirebase />,
+        tooltip: "Firebase",
+      },
+      {
+        icon: <RiSecurePaymentFill />,
+        tooltip: "Paystack",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
     ],
-    github: "",
+    github:
+      "https://github.com/obodobright/mybuild--firebaseauth-useReducer-state-management/tree/master/src/clientPanel",
     live: "https://obodoclientsapp.netlify.app/",
   },
   {
@@ -62,15 +106,37 @@ export const workData: workType[] = [
     description:
       "This is a simple search application that look up for your current Gifs that you fit s your mood",
     stack: [
-      <FaReact />,
-      <SiJavascript />,
-      <AiFillApi />,
-      <IoLogoCss3 />,
-      <SiTailwindcss />,
-      <SiJest />,
-      <SiRedux />,
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <AiFillApi />,
+        tooltip: "API",
+      },
+      {
+        icon: <SiJest />,
+        tooltip: "Jest",
+      },
+      {
+        icon: <SiTailwindcss />,
+        tooltip: "TailwindCSS",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+      {
+        icon: <SiRedux />,
+        tooltip: "Redux",
+      },
     ],
-    github: "",
+
+    github: "https://github.com/obodobright/Giphy-Gif-Riby-react",
     live: "https://lucent-panda-7075b6.netlify.app/",
   },
   {
@@ -79,14 +145,32 @@ export const workData: workType[] = [
     description:
       "This is a web confering apllication that allows users to have a realtime video and audio chat over a low-latency network",
     stack: [
-      <FaReact />,
-      <DiNodejs />,
-      <SiSocketdotio />,
-      <SiJavascript />,
-      <SiStyledcomponents />,
-      <IoLogoCss3 />,
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+      {
+        icon: <DiNodejs />,
+        tooltip: "Node",
+      },
+      {
+        icon: <SiSocketdotio />,
+        tooltip: "Socket.io",
+      },
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <SiStyledcomponents />,
+        tooltip: "Styled-components",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
     ],
-    github: "",
+    github: "https://github.com/obodobright/web-conferecing-app",
     live: "https://ga-meet.netlify.app/",
   },
   {
@@ -95,13 +179,28 @@ export const workData: workType[] = [
     description:
       "This is a clone of the popular dev.io article page, it's is a static single webpage to skill up my react components skills",
     stack: [
-      <FaReact />,
-      <SiMaterialui />,
-      <SiJavascript />,
-      <SiStyledcomponents />,
-      <IoLogoCss3 />,
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+      {
+        icon: <SiMaterialui />,
+        tooltip: "Material UI",
+      },
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <SiStyledcomponents />,
+        tooltip: "Styled-components",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
     ],
-    github: "",
+    github: "https://github.com/obodobright/dev.t0-homepage",
     live: "https://brightobododevtest.netlify.app/",
   },
   {
@@ -109,8 +208,23 @@ export const workData: workType[] = [
     title: "My Thought App",
     description:
       "This is a React beginner application that helps you write your thoughts, where you can save.",
-    stack: [<FaReact />, <SiJavascript />, <IoLogoCss3 />],
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
     github: "",
     live: "https://mythoughtapp.netlify.app/",
   },
 ];
+
+// stack: [<FaReact />, <SiJavascript />, <IoLogoCss3 />],

@@ -1,13 +1,18 @@
 import React from "react";
 import "./home.css";
-import Skills from "./Skills";
-// import Typist from "../typist";
+// import Skills from "./Skills";
+import Typist from "react-typist";
 const Home = () => {
   return (
     <>
       <div className="containerDiv">
-        <h1 className="heroText">I'm Obodo Bright</h1>
-        <p className="text-xl text-white">I am a proficient Frontend Engineer with a </p>
+        <Typist cursor={{ hideWhenDone: true, show: false }} startDelay={3}>
+          <h1 className="heroText">I'm Obodo Bright</h1>
+        </Typist>
+        <Typist cursor={{ hideWhenDone: true, show: false }}>
+          <Typist.Delay ms={2000} />
+          <p className="text-3xl text-white">Front-end Developer </p>
+        </Typist>
       </div>
       <div className="container mx-auto about" style={{ color: "#f2bc94" }}>
         <h3 className="text-2xl font-bold">Get to Know Me</h3>
