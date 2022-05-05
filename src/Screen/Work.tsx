@@ -9,7 +9,7 @@ const Work = () => {
       <h3 className="text-2xl font-bold">Work I have done!</h3>
       <div className="work-project">
         {workData?.map((project) => (
-          <div className="flex items-center justify-around w-full m-10">
+          <div className="flex items-center justify-around w-full m-10 flex-wrap">
             <Slide left>
               <div className="project-img">
                 <img src={project.img} className="img-width" alt="my here" />

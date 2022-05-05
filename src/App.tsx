@@ -8,7 +8,7 @@ import Work from "./Screen/Work";
 function App() {
   return (
     <div className="bodyContainer">
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <Socials />
       <Skills />

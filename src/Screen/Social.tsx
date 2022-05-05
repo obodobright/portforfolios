@@ -25,7 +25,7 @@ const Socials = () => {
   ];
 
   return (
-    <div className=" fixed w-15 m-5  flex-col flex items-center p-3  justify-center bg-transparent  top-40 ">
+    <div className=" fixed w-15 m-5 flex md:hidden flex-col md:flex-row sm:flex-row  items-center p-3  justify-center bg-transparent top-40 md:top-10 sm:top-6">
       {socialIcons.map((icon) => (
         <a href={icon.link} className="p-3 linkText">
           {icon.social}
