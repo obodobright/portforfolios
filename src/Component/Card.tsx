@@ -1,6 +1,7 @@
 import React from "react";
 import ProgressBar from "./Progress";
 import "./style.css";
+import ReactTooltip from "react-tooltip";
 
 type dataProp = {
   data: {
@@ -18,6 +19,19 @@ export const Card = ({ data }: dataProp) => {
       <div className="absolute bottom-0 left-0 ">
         <ProgressBar progressPercentage={data.percentage} />
       </div>
+    </div>
+  );
+};
+
+export const MobileCard = ({ data }: dataProp) => {
+  return (
+    <div className="mobileCard">
+      <>
+        <div className="iconHolder" data-tip={data.skill.toLowerCase()}>
+          {data.icon}
+        </div>
+        <ReactTooltip data-place="bottom" data-type="light" />
+      </>
     </div>
   );
 };

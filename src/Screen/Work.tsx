@@ -1,7 +1,7 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import { workData } from "../Component/workData";
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import "./home.css";
 const Work = () => {
   return (
@@ -10,13 +10,13 @@ const Work = () => {
       <div className="work-project">
         {workData?.map((project) => (
           <div className="flex items-center justify-around w-full m-10 flex-wrap">
-            <Slide left>
+            <Fade bottom>
               <div className="project-img">
                 <img src={project.img} className="img-width" alt="my here" />
               </div>
-            </Slide>
-            <Slide right>
-              <div className="w-" style={{ width: "350px" }}>
+            </Fade>
+            <Fade bottom>
+              <div className="m-res" style={{ width: "350px" }}>
                 <h1 className="text-3xl">{project.title}</h1>
                 <h1 className="text-lg">{project.description}</h1>
 
@@ -48,7 +48,7 @@ const Work = () => {
                   </h4>
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </div>
         ))}
       </div>
