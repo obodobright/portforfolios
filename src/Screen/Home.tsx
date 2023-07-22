@@ -14,9 +14,9 @@ const Home = () => {
           <p className="text-3xl text-white">Front-end Developer </p>
         </Typist>
       </div>
-      <div className="container mx-auto about" style={{ color: "#f2bc94" }}>
-        <h3 className="text-2xl font-bold">Get to Know Me</h3>
-        <p>
+      <div className="container mx-auto about">
+        <h3 className="text-2xl font-bold" style={{ color: "#f2bc94" }}>Get to Know Me</h3>
+        <p className="text-[1.5rem]">
           I am a proficient Frontend Engineer with core knowledge on building responsive web
           applications. I help people get into the tech space by teaching and sharing useful tips
           that could be helpful in their tech journey. Gradually learning to become a tech

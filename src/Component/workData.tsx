@@ -14,7 +14,7 @@ import {
   SiFirebase,
   SiStyledcomponents,
   SiSocketdotio,
-  SiMaterialui,
+  // SiMaterialui,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
@@ -184,7 +184,7 @@ export const workData: workType[] = [
         tooltip: "React",
       },
       {
-        icon: <SiMaterialui />,
+        icon: <></>,
         tooltip: "Material UI",
       },
       {
