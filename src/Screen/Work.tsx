@@ -5,8 +5,9 @@ import Fade from "react-reveal/Fade";
 import "./home.css";
 const Work = () => {
   return (
-    <div className="container mx-auto work " style={{ color: "#f2bc94" }}>
-      <h3 className="text-2xl font-bold">Work I have done!</h3>
+    <div className="py-[40px] px-[8.5vw]">
+
+      <h3 className="text-4xl font-bold text-[#020617]  mb-2">My <span className="text-[#00488C]">portfolio</span></h3>
       <div className="work-project">
         {workData?.map((project) => (
           <div className="flex items-center justify-around w-full m-10 flex-wrap">

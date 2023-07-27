@@ -1,11 +1,10 @@
 .card {
-    width: 15rem;
-    height: 13rem;
+    padding: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00154f;
-    color: #f2bc94;
+    background: transparent;
+    color: #00488c;
     flex-direction: column;
     border-radius: 7px;
     border-top-right-radius: 0;
@@ -78,20 +77,13 @@
 
 .card:hover {
     /* animation: bounces 1s both; */
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0.5;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* opacity: 0.5; */
     margin-top: 3px;
+    color: #00154f;
 }
 
 .iconHolder {
     font-size: 30px;
-    color: #f2bc94;
-}
-
-.progress-bar {
-    background-color: #f2bc94;
-    /* transition: all 350ms; */
-    border-bottom-left-radius: 7px;
-    border-top-left-radius: 7px;
-    /* animation: slideInLeft 1s both; */
+    color: #00488c;
 }

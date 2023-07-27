@@ -25,12 +25,14 @@ const Socials = () => {
   ];
 
   return (
-    <div className="social-mobile fixed w-15 m-5  flex-col flex items-center p-3  justify-center bg-transparent  top-40 ">
-      {socialIcons.map((icon) => (
-        <a href={icon.link} className="p-3 linkText">
-          {icon.social}
-        </a>
-      ))}
+    <div className="social">
+      <div className="social-mobile  fixed  w-15 m-5  flex-col flex items-center p-3  justify-center bg-transparent  top-40 right-0 ">
+        {socialIcons.map((icon) => (
+          <a href={icon.link} className="p-3 linkText">
+            {icon.social}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

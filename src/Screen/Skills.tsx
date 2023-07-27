@@ -8,9 +8,9 @@ import Fade from "react-reveal/Fade";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto skills pt-10 pb-10">
-      <h2 className="text-2xl font-bold text-center " style={{ color: "#f2bc94" }}>
-        Skills
+    <div className=" py-[40px] px-[8.5vw]">
+      <h2 className="text-4xl font-bold text-[#020617]  mb-6">
+        My <span className="text-[#00488C]">skills</span>
       </h2>
       <div className="cardContainer">
         <Fade bottom>

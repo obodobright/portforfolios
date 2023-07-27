@@ -1,5 +1,5 @@
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
-import { SiJavascript, SiTypescript, SiFirebase, SiNextdotjs } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiFirebase, SiNextdotjs, SiSass, SiDotnet } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
 import { BsGithub } from "react-icons/bs";
@@ -54,6 +54,16 @@ const skills: skillType[] = [
     skill: "NEXT",
     percentage: 75,
     icon: <SiNextdotjs />,
+  },
+  {
+    skill: "Sass",
+    percentage: 75,
+    icon: <SiSass />,
+  },
+  {
+    skill: ".NET",
+    percentage: 75,
+    icon: <SiDotnet />,
   },
 ];
 

@@ -5,7 +5,8 @@ import img3 from "../image/giffinder.png";
 import img4 from "../image/generalassembly.png";
 import img5 from "../image/thoughtapp.png";
 import img6 from "../image/dev.io.png";
-
+import img7 from "../image/yebora.png";
+import img8 from "../image/sportix.png";
 import {
   SiJavascript,
   SiTailwindcss,
@@ -14,6 +15,9 @@ import {
   SiFirebase,
   SiStyledcomponents,
   SiSocketdotio,
+  SiTypescript,
+  SiNextdotjs,
+  SiSass,
   // SiMaterialui,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -34,6 +38,75 @@ type workType = {
 };
 
 export const workData: workType[] = [
+  {
+    img: img7,
+    title: "Yebora",
+    description:
+      "Yebora is a transparent crowdfunding platform where you can make a difference. Empower your community and support the causes that matter to you",
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+
+      {
+        icon: <AiFillApi />,
+        tooltip: "API",
+      },
+      {
+        icon: <SiNextdotjs />,
+        tooltip: "Nextjs"
+      },
+      {
+        icon: <SiTypescript />,
+        tooltip: "Typescript",
+      },
+      {
+        icon: <SiSass />,
+        tooltip: "Sass/Less",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
+    github: "https://github.com",
+    live: "https://new-staging.yebora.com/",
+  },
+  {
+    img: img8,
+    title: "Sport-Statix",
+    description: "The ultimate sports management platform dedicated to bringing African sports together.",
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+
+      {
+        icon: <AiFillApi />,
+        tooltip: "API",
+      },
+      {
+        icon: <SiNextdotjs />,
+        tooltip: "Nextjs"
+      },
+      {
+        icon: <SiTypescript />,
+        tooltip: "Typescript",
+      },
+      {
+        icon: <SiSass />,
+        tooltip: "Sass/Less",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
+    github: "https://github.com",
+    live: "https://sportstatix.com/",
+  },
   {
     img: img2,
     title: "Lumen Luxury",
