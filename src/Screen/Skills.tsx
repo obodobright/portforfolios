@@ -8,15 +8,15 @@ import Fade from "react-reveal/Fade";
 
 const Skills = () => {
   return (
-    <div className=" py-[40px] px-[8.5vw]">
+    <div className=" py-[40px] px-[8.5vw]" id="skill">
       <h2 className="text-4xl font-bold text-[#020617]  mb-6">
         My <span className="text-[#00488C]">skills</span>
       </h2>
       <div className="cardContainer">
         <Fade bottom>
-          {Skill.map((data) => (
+          {Skill?.map((data, i) => (
             <>
-              <div className="web-lg">
+              <div key={i} className="web-lg">
                 <Card data={data} />
               </div>
               <div className="mob-sm">

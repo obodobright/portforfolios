@@ -5,21 +5,21 @@ import Fade from "react-reveal/Fade";
 import "./home.css";
 const Work = () => {
   return (
-    <div className="py-[40px] px-[8.5vw]">
+    <div className="py-[40px] px-[8.5vw]" id="portfolio">
 
       <h3 className="text-4xl font-bold text-[#020617]  mb-2">My <span className="text-[#00488C]">portfolio</span></h3>
-      <div className="work-project">
-        {workData?.map((project) => (
-          <div className="flex items-center justify-around w-full m-10 flex-wrap">
+      <div className="work-project grid  gap-4">
+        {workData?.map((project, i) => (
+          <div key={i} className=" shadow hover:shadow-md p-4 items-center justify-around w-full ">
             <Fade bottom>
               <div className="project-img">
                 <img src={project.img} className="img-width" alt="my here" />
               </div>
             </Fade>
             <Fade bottom>
-              <div className="m-res" style={{ width: "350px" }}>
+              <div className="m-res my-4 flex items-center justify-center flex-col" >
                 <h1 className="text-3xl">{project.title}</h1>
-                <h1 className="text-lg">{project.description}</h1>
+                <h2 className="text-lg text-center">{project.description}</h2>
 
                 <div className="icon-holder">
                   {project.stack?.map((icon) => (

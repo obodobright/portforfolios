@@ -1,27 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-.containerDiv {
-    /* width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 60vh;
-    padding: 20px; */
-    /* background-color: red; */
-}
-
 .social {
     position: relative;
 }
 
-.social::before {
-    position: fixed;
-    content: "";
-    height: 15vh;
-    right: 55px;
-    top: 20%;
-    width: 2px;
-    background-color: #00488c;
+.mobile-socials {
+    display: none;
 }
 
 .heroText {
@@ -36,62 +19,6 @@
 
 .mob-sm {
     display: none;
-}
-
-@media (max-width: 768px) {
-    .containerDiv {
-        height: 40vh;
-    }
-    .heroText {
-        font-size: 40px;
-        text-align: center;
-    }
-    .about,
-    .skills,
-    .work {
-        width: 100%;
-        padding: 20px;
-    }
-    .work-project .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-    .project-img {
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    .m-res {
-        margin-bottom: 20px;
-        margin-top: 20px;
-        text-align: center;
-    }
-    .social-mobile {
-        position: absolute;
-        top: 25%;
-        flex-direction: row;
-        /* width: 100%; */
-        left: 10%;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-    }
-    .icon-holder div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .web-lg {
-        display: none;
-    }
-    .mob-sm {
-        display: block;
-    }
 }
 
 .linkText {
@@ -115,17 +42,12 @@
 .cardContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .work-project {
-    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding: 10px;
-    /* min-height: 70vh;
-    height: 100%; */
-    /* display: flex; */
-    /* justify-content: space-around;
-    align-items: center; */
+    margin: 2.5rem;
 }
 
 .icon-holder {
@@ -134,21 +56,12 @@
 }
 
 .img-width {
-    width: 550px;
+    object-fit: cover;
     background-position: center;
     background-size: cover;
     border-radius: 5px;
     cursor: pointer;
     transition: all 350ms;
-    transform: scaleY(1);
-}
-
-.img-width:hover {
-    transform: scaleY(1.06);
-}
-
-.project-img {
-    /* width: 300px; */
 }
 
 .url-item {
@@ -172,4 +85,67 @@
 .url-item:hover::after {
     visibility: visible;
     transition: all 350ms;
+}
+
+@media (max-width: 768px) {
+    .containerDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .containerDiv button {
+        display: flex;
+        justify-content: center;
+    }
+    .heroText {
+        font-size: 40px;
+        text-align: center;
+    }
+    .mobile-socials {
+        display: block;
+    }
+    .about,
+    .skills,
+    .work {
+        width: 100%;
+        padding: 20px;
+    }
+    .work-project {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+        margin: 0.5rem;
+    }
+    .project-img {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .m-res {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .social-mobile {
+        display: none;
+    }
+    .social::before {
+        display: none;
+    }
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    }
+    .icon-holder div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .web-lg {
+        display: none;
+    }
+    .mob-sm {
+        display: block;
+    }
 }

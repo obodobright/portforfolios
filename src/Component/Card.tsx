@@ -28,6 +28,7 @@ export const MobileCard = ({ data }: dataProp) => {
         <div className="iconHolder" data-tip={data.skill.toLowerCase()}>
           {data.icon}
         </div>
+        <h3 className="text-xl tracking-wide">{data.skill}</h3>
         <ReactTooltip data-place="bottom" data-type="light" />
       </>
     </div>

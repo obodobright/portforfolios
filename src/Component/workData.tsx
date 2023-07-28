@@ -2,11 +2,13 @@ import { IoLogoCss3 } from "react-icons/io";
 import img1 from "../image/clientpanel.png";
 import img2 from "../image/lumen.png";
 import img3 from "../image/giffinder.png";
-import img4 from "../image/generalassembly.png";
-import img5 from "../image/thoughtapp.png";
-import img6 from "../image/dev.io.png";
+import img4 from "../image/assembly.png";
+import img6 from "../image/xerobug.png";
 import img7 from "../image/yebora.png";
 import img8 from "../image/sportix.png";
+import img9 from "../image/kv.png";
+import img10 from "../image/sophe.png";
+import img11 from "../image/riby.png";
 import {
   SiJavascript,
   SiTailwindcss,
@@ -108,10 +110,40 @@ export const workData: workType[] = [
     live: "https://sportstatix.com/",
   },
   {
-    img: img2,
-    title: "Lumen Luxury",
-    description:
-      "This is a mini e-commerce application that gives users the ability to buy both male and female clothes with a payment integration",
+    img: img10,
+    title: "Sophee",
+    description: "New age of digital banking",
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+
+      {
+        icon: <AiFillApi />,
+        tooltip: "API",
+      },
+      {
+        icon: <SiNextdotjs />,
+        tooltip: "Nextjs"
+      },
+      {
+        icon: <SiTypescript />,
+        tooltip: "Typescript",
+      },
+
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
+    github: "https://github.com",
+    live: "https://sophe.vercel.app/",
+  },
+  {
+    img: img9,
+    title: "Knight Ventures",
+    description: "An incubator, accelerator and investor platform that helps grow business ideas.",
     stack: [
       {
         icon: <FaReact />,
@@ -126,53 +158,16 @@ export const workData: workType[] = [
         icon: <SiJavascript />,
         tooltip: "JavaScript",
       },
-      {
-        icon: <SiStyledcomponents />,
-        tooltip: "Styled-components",
-      },
+
       {
         icon: <IoLogoCss3 />,
         tooltip: "CSS",
       },
     ],
-    github: "https://github.com/obodobright/Mini-ecommerce-with-payment-stack",
-    live: "https://lumenluxury.netlify.app/",
+    github: "https://github.com/obodobright/",
+    live: "https://app.knight.ventures/",
   },
-  {
-    img: img1,
-    title: "Client Panel",
-    description:
-      "A tracking application for small and medium scale entrepreneur especially market women to track their debtors",
-    stack: [
-      {
-        icon: <FaReact />,
-        tooltip: "React",
-      },
-      {
-        icon: <SiJavascript />,
-        tooltip: "JavaScript",
-      },
-      {
-        icon: <SiStyledcomponents />,
-        tooltip: "Styled-components",
-      },
-      {
-        icon: <SiFirebase />,
-        tooltip: "Firebase",
-      },
-      {
-        icon: <RiSecurePaymentFill />,
-        tooltip: "Paystack",
-      },
-      {
-        icon: <IoLogoCss3 />,
-        tooltip: "CSS",
-      },
-    ],
-    github:
-      "https://github.com/obodobright/mybuild--firebaseauth-useReducer-state-management/tree/master/src/clientPanel",
-    live: "https://obodoclientsapp.netlify.app/",
-  },
+
   {
     img: img3,
     title: "Gif Finder",
@@ -247,18 +242,67 @@ export const workData: workType[] = [
     live: "https://ga-meet.netlify.app/",
   },
   {
+    img: img11,
+    title: "Riby Hr",
+    description: "RibyHr is a dedicated Hr platform where jobs can be posted by the dedicated staff and be seen in job market place and Riby website",
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+
+      {
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <SiFirebase />,
+        tooltip: "Firebase",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
+    github: "https://github.com/obodobright/",
+    live: "https://riby-hr.vercel.app/",
+  },
+  {
     img: img6,
-    title: "Dev.io Article feedspage - Clone",
+    title: "Xerobugs",
     description:
-      "This is a clone of the popular dev.io article page, it's is a static single webpage to skill up my react components skills",
+      "Xerobugs provides you with a zero bug free applications, the software connects Software testers to clients to meet bug free systems.",
     stack: [
       {
         icon: <FaReact />,
         tooltip: "React",
       },
       {
-        icon: <></>,
-        tooltip: "Material UI",
+        icon: <SiJavascript />,
+        tooltip: "JavaScript",
+      },
+      {
+        icon: <IoLogoCss3 />,
+        tooltip: "CSS",
+      },
+    ],
+    github: "https://console.xerobugs.com/",
+    live: "https://xerobugs.com/",
+  },
+  {
+    img: img2,
+    title: "Lumen Luxury",
+    description:
+      "This is a mini e-commerce application that gives users the ability to buy both male and female clothes with a payment integration",
+    stack: [
+      {
+        icon: <FaReact />,
+        tooltip: "React",
+      },
+
+      {
+        icon: <AiFillApi />,
+        tooltip: "API",
       },
       {
         icon: <SiJavascript />,
@@ -273,14 +317,14 @@ export const workData: workType[] = [
         tooltip: "CSS",
       },
     ],
-    github: "https://github.com/obodobright/dev.t0-homepage",
-    live: "https://brightobododevtest.netlify.app/",
+    github: "https://github.com/obodobright/Mini-ecommerce-with-payment-stack",
+    live: "https://lumenluxury.netlify.app/",
   },
   {
-    img: img5,
-    title: "My Thought App",
+    img: img1,
+    title: "Client Panel",
     description:
-      "This is a React beginner application that helps you write your thoughts, where you can save.",
+      "A tracking application for small and medium scale entrepreneur especially market women to track their debtors",
     stack: [
       {
         icon: <FaReact />,
@@ -291,12 +335,25 @@ export const workData: workType[] = [
         tooltip: "JavaScript",
       },
       {
+        icon: <SiStyledcomponents />,
+        tooltip: "Styled-components",
+      },
+      {
+        icon: <SiFirebase />,
+        tooltip: "Firebase",
+      },
+      {
+        icon: <RiSecurePaymentFill />,
+        tooltip: "Paystack",
+      },
+      {
         icon: <IoLogoCss3 />,
         tooltip: "CSS",
       },
     ],
-    github: "",
-    live: "https://mythoughtapp.netlify.app/",
+    github:
+      "https://github.com/obodobright/mybuild--firebaseauth-useReducer-state-management/tree/master/src/clientPanel",
+    live: "https://obodoclientsapp.netlify.app/",
   },
 ];
 
