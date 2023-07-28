@@ -1,7 +1,7 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import { workData } from "../Component/workData";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import "./home.css";
 const Work = () => {
   return (
@@ -11,45 +11,45 @@ const Work = () => {
       <div className="work-project grid  gap-4">
         {workData?.map((project, i) => (
           <div key={i} className=" shadow hover:shadow-md p-4 items-center justify-around w-full ">
-            <Fade bottom>
-              <div className="project-img">
-                <img src={project.img} className="img-width" alt="my here" />
-              </div>
-            </Fade>
-            <Fade bottom>
-              <div className="m-res my-4 flex items-center justify-center flex-col" >
-                <h1 className="text-3xl">{project.title}</h1>
-                <h2 className="text-lg text-center">{project.description}</h2>
+            {/* <Fade bottom> */}
+            <div className="project-img">
+              <img src={project.img} className="img-width" alt="my here" />
+            </div>
+            {/* </Fade> */}
+            {/* <Fade bottom> */}
+            <div className="m-res my-4 flex items-center justify-center flex-col" >
+              <h1 className="text-3xl">{project.title}</h1>
+              <h2 className="text-lg text-center">{project.description}</h2>
 
-                <div className="icon-holder">
-                  {project.stack?.map((icon) => (
-                    <>
-                      <div
-                        data-tip={icon.tooltip}
-                        style={{ fontSize: "30px", margin: "5px", color: "#130b43" }}
-                      >
-                        {icon.icon}
-                      </div>
-                      <ReactTooltip />
-                    </>
-                  ))}
-                </div>
-
-                <div className="flex items-center">
-                  <h4 className=" url-item">
-                    <a href={project.live} target="_blank" rel="noreferrer">
-                      Live
-                    </a>
-                  </h4>
-                  <span className="text-lg font-bold">|</span>
-                  <h4 className=" url-item">
-                    <a href={project.github} target="_blank" rel="noreferrer">
-                      Github
-                    </a>
-                  </h4>
-                </div>
+              <div className="icon-holder">
+                {project.stack?.map((icon) => (
+                  <>
+                    <div
+                      data-tip={icon.tooltip}
+                      style={{ fontSize: "30px", margin: "5px", color: "#130b43" }}
+                    >
+                      {icon.icon}
+                    </div>
+                    <ReactTooltip />
+                  </>
+                ))}
               </div>
-            </Fade>
+
+              <div className="flex items-center">
+                <h4 className=" url-item">
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    Live
+                  </a>
+                </h4>
+                <span className="text-lg font-bold">|</span>
+                <h4 className=" url-item">
+                  <a href={project.github} target="_blank" rel="noreferrer">
+                    Github
+                  </a>
+                </h4>
+              </div>
+            </div>
+            {/* </Fade> */}
           </div>
         ))}
       </div>
